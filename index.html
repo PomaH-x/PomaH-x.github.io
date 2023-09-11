@@ -2,10 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Задание 1</title>
 </head>
 <body>
-   <h1>Roma</h1>     
+<form action="/" method="POST">
+
+<label>
+  Ваши ФИО:<br />
+  <input name="field-name"
+  placeholder="Введите ФИО " />
+</label><br />
+
+<label>
+    Телефон:<br />
+    <input name="field-name"
+    type="tel"
+    placeholder="Введите телефон " />
+  </label><br />
+
+<label>
+  Ваш email:<br />
+  <input name="field-email"
+    type="email"
+    placeholder="Введите вашу почту" />
+</label><br />
+
+<label>
+  Даты:<br />
+  <input name="field-date"
+    type="date" />
+</label><br />
+
+Выберите пол:<br />
+<label><input type="radio" checked="checked"
+  name="floar" value="Мужской" />
+  Мужской</label>
+<label><input type="radio"
+  name="floar" value="Женский" />
+  Женский</label><br />
+
+  <label>
+    Любимый язык программирования:
+    <br />
+    <select name="field-name-4[]"
+      multiple="multiple">
+      <option value="1">Pascal</option>
+      <option value="2">C</option>
+      <option value="3">C++</option>
+      <option value="4">JavaScript</option>
+      <option value="5">PHP</option>
+      <option value="6">Python</option>
+      <option value="7">Java</option>
+    </select>
+  </label><br />
+
+<label>
+    Ваша биография:<br />
+  <textarea name="field-name-2">Я родился... </textarea>
+</label><br />
+
+<label><input type="checkbox" 
+  name="check-1" />
+  С контрактом ознакомлен (а)</label><br />
+
+<label>
+    <input type="button" value="Сохранить" />
+</label>
+</form>
 </body>
 </html>
