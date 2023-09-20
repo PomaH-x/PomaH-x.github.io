@@ -3,41 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task2.css">
     <title>Задание 2</title>
 </head>
 <body>
-    <h1>Масштабная <br /> многопользовательская <br /> онлайн-игра</h1>
-    <ul> 
-    <li><a href="http://kubsu.ru/">КубГУ</a></li><br />
-    <li><a href="https://kubsu.ru/">КубГУ c https </a> </li><br />
-    <li><a href="#roman">Фрагмент текущей страницы</a></li><br />
-    </ul>
-    <h2 id="roman">Сепульки</h2>
-    
-<form action="/" method="POST">
+    <header>
+        <img src="image2.jpg" alt="Иконка игры">
+        <h1>Масштабная <br /> многопользовательская <br /> онлайн-игра</h1>
+        <a href="https://warthunder.ru/ru/">Главная страница</a>
+        <a href="#shop">Магазин</a>
+        <a href="https://warthunder.ru/ru/media/tutorials/">Помощь</a>
+    </header>
+    <nav>
+        <ul> 
+            <li><a href="https://warthunder.ru/ru/game/about/"> Об игре </a></li><br />
+            <li><a href="https://warthunder.ru/ru/news/"> Новости </a> </li><br />
+            <li><a href="#roman">Регистируйтесь прямо сейчас!</a></li><br />
+        </ul>
+        
+        <table id="shop">
+            <tr>
+              <th>Лидеры продаж</th>    
+              <th>Товар</th>
+              <th>Стоимость</th>
+              <th>Экономия</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td colspan="2"> Премиум-аккаунт (180 дней)</td>
+              <td>36%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>25000 Золотых Орлов</td>
+              <td>6210 ₽</td>
+              <td>31%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>10000 Золотых Орлов</td>
+              <td>2700 ₽</td>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5000 Золотых Орлов</td>
+              <td>1350 ₽</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>2500 Золотых Орлов</td>
+              <td>900 ₽</td>
+              <td>16%</td>
+            </tr>
+          </table>
+        <br/>
+        <h2>Регистрация</h2>
+        <br/>
+        <form action="/" method="POST" id="roman">
 
-<label>
-  Введите Ваш email:<br />
-  <input name="field-email"
-    type="email"
-    placeholder="" />
-</label><br />
-<br />
-<label>
-  Введите пароль:<br />
-  <input name="field-password"
-    type="password"
-    placeholder="" />
-</label><br />
-<br />
-<label><input type="checkbox" 
-  name="check-1" />
-  С пользовательским соглашением ознакомлен (а)</label><br />
-  <br />
-<label>
-    <input type="button" value="Зарегистрироваться" />
-</label>
-
-</form>
+            <label>
+            Введите Ваш email:<br />
+            <input name="field-email"
+                type="email"
+                placeholder="" required/>
+            </label><br />
+            <br />
+            <label>
+            Введите пароль:<br />
+            <input name="field-password"
+                type="password"
+                placeholder="" required/>
+            </label><br />
+            <br />
+            <label><input type="checkbox" 
+            name="check-1" required/>
+            С пользовательским соглашением ознакомлен (а)</label><br />
+            <br />
+            <label>
+                <input type="submit" value="Зарегистрироваться"/>
+            </label>
+        </form>
+    </nav>
+    <footer>
+        <p>©Ермаков Роман 2023</p>
+    </footer>
 </body>
 </html>
