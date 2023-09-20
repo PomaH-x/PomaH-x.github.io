@@ -8,15 +8,13 @@ body{
 
 header{
     background-color: rgb(30, 43, 43);
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
     padding: 5px;
 }
 
 footer{
     background-color: rgb(30, 43, 43);
-    border-radius: 20px;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: none;
+    border-radius: 20px 20px 0px 0px;
     padding: 5px;
 }
 
@@ -47,7 +45,9 @@ img {
 
 header a{
     border: 1px dashed cornflowerblue;
-    padding:10px;
+    border-right: none;
+    border-top: none;
+    padding: 10px;
     float: right; 
 }
 
@@ -63,8 +63,26 @@ th, td {
 
 h2{
     color: cornflowerblue;
+    margin-bottom: 10px;
 }
 
 input{
-    background-color: rgb(118, 182, 182);;
+    background-color: rgb(118, 182, 182);
+}
+
+.button{
+    padding: 5px;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+.URLs{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h1{
+    display: inline-block;
+    margin-left: 30px;
 }
