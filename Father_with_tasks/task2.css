@@ -1,3 +1,70 @@
 body{
-    background-color: aqua;
+    background-color: rgb(23, 31, 31);
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color:rgb(176, 186, 196);
+}
+
+header{
+    background-color: rgb(30, 43, 43);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+footer{
+    background-color: rgb(30, 43, 43);
+    border-radius: 20px;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    padding: 5px;
+}
+
+nav{
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+a{
+    color: rgb(118, 182, 182);
+    font-size: 28px;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(64, 86, 185, 0.705);
+}
+
+tr:nth-child(even){
+    background-color: rgb(30, 30, 43);
+}
+
+img {
+    border-radius: 100%;
+    width: 200px;
+    height: 150px;
+}
+
+header a{
+    border: 1px dashed cornflowerblue;
+    padding:10px;
+    float: right; 
+}
+
+table{
+    border: 5px double black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+h2{
+    color: cornflowerblue;
+}
+
+input{
+    background-color: rgb(118, 182, 182);;
 }
