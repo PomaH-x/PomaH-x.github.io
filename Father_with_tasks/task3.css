@@ -6,10 +6,29 @@ body{
     color:rgb(176, 186, 196);
 }
 
+header, main, footer 
+{
+    width: 100%;
+}
+
 header{
     background-color: rgb(30, 43, 43);
     border-radius: 0px 0px 20px 20px;
     padding: 5px;
+}
+
+.URLs a{
+    border: 1px dashed rgb(98, 147, 238);
+    color: rgb(176, 186, 196);
+    padding: 10px;
+    float: left;  
+}
+
+.URLs{
+    order: 0; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 footer{
@@ -18,15 +37,16 @@ footer{
     padding: 5px;
 }
 
-nav{
+main{
     padding: 10px;
-    max-width: 960px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-a{
+nav a{
     color: rgb(118, 182, 182);
-    font-size: 28px;
+    font-size: 24px;
+    padding: 10px;
 }
 
 tr:nth-child(odd){
@@ -43,27 +63,30 @@ img {
     height: 150px;
 }
 
-header a{
-    border: 1px dashed cornflowerblue;
-    border-right: none;
-    border-top: none;
-    padding: 10px;
-    float: right; 
+table{
+    order: 1;
+    border: 5px double black;
 }
 
-table{
-    border: 5px double black;
+nav{
+    order: 2;
+}
+
+form{
+    padding-left: 10px;
+    order: 4;
+}
+
+h2{
+    color: cornflowerblue;
+    margin-bottom: 10px;
+    order: 3;
 }
 
 th, td {
     border: 1px solid black;
     padding: 3px;
     text-align: center;
-}
-
-h2{
-    color: cornflowerblue;
-    margin-bottom: 10px;
 }
 
 input{
@@ -76,17 +99,38 @@ input{
     border: 1px solid black;
 }
 
-.URLs{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 h1{
     display: inline-block;
     margin-left: 30px;
+    font-size: 40px;
 }
 
 li{
     margin: 5px 0px 5px 0px;
+}
+
+@media screen and (min-width: 768px) 
+{
+    main{
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    table{
+        order: 2;
+    }
+    
+    nav{
+        order: 1;
+    }
+
+    .URLs{
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: row;
+    }
 }
