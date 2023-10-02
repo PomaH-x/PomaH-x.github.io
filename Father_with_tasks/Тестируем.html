@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="task3.css">
+    <title>Задание 4</title>
+</head>
+<body>
+    <header class="bg-rgb(30, 43, 43) text-rgb(176, 186, 196) py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="image2.jpg" alt="Иконка игры">
+                    
+                </div>
+                <div class="col-md-4">
+                    <h1 class="ms-2">Масштабная <br /> многопользовательская <br /> онлайн-игра</h1>
+                </div>
+                <div class="col-md-3 text-end px-4">
+                    <a href="https://warthunder.ru/ru/">Главная страница</a>
+                    <a href="#shop">Магазин</a>
+                    <a href="https://warthunder.ru/ru/media/tutorials/">Помощь</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li><a href="https://warthunder.ru/ru/game/about/"> Об игре </a></li>
+                    <li><a href="https://warthunder.ru/ru/news/"> Новости </a> </li>
+                    <li><a href="#roman">Регистируйтесь прямо сейчас!</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <table id="shop">
+                    <tr>
+                      <th>Лидеры продаж</th>    
+                      <th>Товар</th>
+                      <th>Стоимость</th>
+                      <th>Экономия</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td colspan="2"> Премиум-аккаунт (180 дней)</td>
+                      <td>36%</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>25000 Золотых Орлов</td>
+                      <td>6210 ₽</td>
+                      <td>31%</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>10000 Золотых Орлов</td>
+                      <td>2700 ₽</td>
+                      <td>25%</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>5000 Золотых Орлов</td>
+                      <td>1350 ₽</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>2500 Золотых Орлов</td>
+                      <td>900 ₽</td>
+                      <td>16%</td>
+                    </tr>
+                  </table>
+
+                <h2>Регистрация</h2>
+                <form action="#" method="POST" id="roman">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Введите Ваш email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Введите пароль:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                        <label class="form-check-label" for="terms">С пользовательским соглашением ознакомлен (а)</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center mt-3">&copy; Ермаков Роман 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-8+IvZ7mQxYUW0WzCvLlWdV9oJ1qBc/2DjJ0rLpTzNzNvSbJpXf8M7C4jyJG6YtjFgE0f3uO+KX5b2yR4Eh+MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
