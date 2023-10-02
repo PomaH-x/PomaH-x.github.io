@@ -21,25 +21,25 @@
                 <div class="col-md-4">
                     <h1 class="ms-2">Масштабная <br /> многопользовательская <br /> онлайн-игра</h1>
                 </div>
-                <div class="col-md-3 text-end px-4">
-                    <a href="https://warthunder.ru/ru/">Главная страница</a>
-                    <a href="#shop">Магазин</a>
-                    <a href="https://warthunder.ru/ru/media/tutorials/">Помощь</a>
+                <div class="col-md-6 d-flex justify-content-end px-4">
+                    <a class="px-3" href="https://warthunder.ru/ru/">Главная страница</a>
+                    <a class="px-3" href="#shop">Магазин</a>
+                    <a class="px-3" href="https://warthunder.ru/ru/media/tutorials/">Помощь</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="colomn d-flex flex-column">
+            <div class="col-md-4 order-2 order-md-1">
                 <ul class="list-group">
                     <li><a href="https://warthunder.ru/ru/game/about/"> Об игре </a></li>
                     <li><a href="https://warthunder.ru/ru/news/"> Новости </a> </li>
                     <li><a href="#roman">Регистируйтесь прямо сейчас!</a></li>
                 </ul>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7 order-1 order-md-2">
                 <table id="shop">
                     <tr>
                       <th>Лидеры продаж</th>    
@@ -77,8 +77,9 @@
                       <td>16%</td>
                     </tr>
                   </table>
-
-                <h2>Регистрация</h2>
+            </div>
+                <h2 class="order-3">Регистрация</h2>
+            <div class="col-md-4 order-4">
                 <form action="#" method="POST" id="roman">
                     <div class="mb-3">
                         <label for="email" class="form-label">Введите Ваш email:</label>
@@ -90,7 +91,7 @@
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
-                        <label class="form-check-label" for="terms">С пользовательским соглашением ознакомлен (а)</label>
+                        <label class="form-check-label" for="terms">С пользовательским соглашением ознакомлен</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
                 </form>
@@ -102,7 +103,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="text-center mt-3">&copy; Ермаков Роман 2023</p>
+                    <p class="mt-3">&copy; Ермаков Роман 2023</p>
                 </div>
             </div>
         </div>
