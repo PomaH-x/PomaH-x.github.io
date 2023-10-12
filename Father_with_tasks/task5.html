@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task5.css">
+    <title>Задание 5</title>
+</head>
+<body>
+    <div class="form">
+        <div class="name">
+            <h1>Magic shop</h1>
+        </div>
+        <form>
+            <div class="forma">
+                <label for="product"><b>Выберите товар</b></label>
+                <br>
+                <select id="product">
+                    <option value="400" style="color: darkgrey">Зелье невидимости ($400)</option>
+                    <option value="250" style="color: crimson;">Зелье здоровья ($250)</option>
+                    <option value="150" style="color: rgb(16, 221, 43);">Зелье скорости ($150)</option>
+                    <option value="300" style="color: rgb(239, 243, 9);">Зелье силы ($300)</option>
+                </select>
+                <br>
+                <label for="quantity"><b>Введите количество</b></label>
+                <br>
+                <input type="text" id="quantity">
+                <br>
+                <button type="button" id="calculate" ><b>Происходит магия чисел</b></button>
+            </div>
+        </form>
+    </div>
+    <div id="result"></div>
+    <script src="Task5.js"> </script>
+</body>
+</html>
