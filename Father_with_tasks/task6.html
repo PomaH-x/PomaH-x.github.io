@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task6.css">
+    <title>Задание 6</title>
+</head>
+<body>
+    <div class="form">
+        <div class="name">
+            <h1>Magic shop</h1>
+        </div>
+        <form>
+            <div class="forma">
+                <div class="select">
+                    <label for="product"><b>Выберите товар</b></label>
+                    <br>
+                    <select name="prodType" id="product">
+                        <option value="0" style="color: rgb(219, 13, 192);">Выберите зелье</option>
+                        <option value="1" style="color: rgb(239, 243, 9);">Зелье силы ($300)</option>
+                        <option value="2" style="color: crimson;">Зелье здоровья ($250)</option>
+                        <option value="3" style="color: rgb(16, 221, 43);">Зелье скорости ($150)</option>
+                    </select>
+                </div>  
+                <div id="radios">
+                    <label><input type="radio" name="prodOptions" value="option1"> <b>Разбавленное (+0$)</b></label>
+                    <label><input type="radio" name="prodOptions" value="option2"> <b>Густое (×2)</b></label>
+                    <label><input type="radio" name="prodOptions" value="option3"> <b>Усиленное (×3)</b></label>
+                </div>
+                <br>
+                <label for="quantity"><b>Количество</b></label>
+                <br>
+                <input type="text" id="quantity" name="quantity" pattern="[1-9]\d*" title="Введите целое положительное число" value="1"><br>
+                <div id="sele" style="display: none;">
+                    <select id="option1" name="option1">
+                        <option value="0" name="se">Выберите эксклюзив </option>
+                        <option value="50" name="se"> Слеза гаста (+50$)</option>
+                        <option value="30" name="se"> Лавовый крем (+30$)</option>
+                    </select>
+                </div>
+                <div id="checkboxes" style="display: none;">
+                    <label><input type="checkbox" name="prop1"> Красная пыль (+10$)</label>
+                    <label><input type="checkbox" name="prop2"> Огненный порошок (+20$)</label>
+                </div>
+                <div class="price">
+                    <label for="price"><b>Стоимость покупки</b></label>
+                    <br>
+                    <input type="text" id="price" name="price" readonly><br><br>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="Task6.js"></script>
+  </body>
+</html>

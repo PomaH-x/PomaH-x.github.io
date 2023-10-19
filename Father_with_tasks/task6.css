@@ -1,0 +1,91 @@
+.form{
+    width: 900px;
+    height: 700px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 10px double black;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    background: linear-gradient(45deg, #12d63c, #05612e, #e2c315,#960e8a, #9f33a3, #db0cc0);
+    animation: gradient 5s ease-in infinite;
+    background-size: 400% 400%;
+}
+
+option{
+    background: darkblue;
+}
+
+select{
+    background: rgb(41, 206, 228);
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.select{
+    position: relative;
+    bottom: 50px;
+}
+
+#radios{
+    position: relative;
+    top: 30px;
+}
+
+.price{
+    position: relative;
+    top: 50px;
+}
+
+#option1 option{
+    background: rgb(29, 163, 204);
+}
+
+input{
+    background-color: rgb(41, 206, 228);
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: medium;
+}
+
+button{
+    background-color: #0de9de;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.name{
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.forma{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
