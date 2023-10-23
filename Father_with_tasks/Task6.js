@@ -72,10 +72,6 @@ function updatePrice()
     {
         alert("Количество товара должно быть положительным числом!");
     }
-    if (document.getElementById('product').value == "0")
-    {
-        alert("Выберите зелье!");
-    }
     else
     {
         price *= quantity; 
