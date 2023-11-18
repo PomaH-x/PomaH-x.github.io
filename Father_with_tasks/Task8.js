@@ -39,7 +39,7 @@ function openForm() {
 
 function closeForm() {
   $('#popup').hide();
-  history.pushState(null, null, '/');
+  history.replaceState(null, null, window.location.pathname);
   saveForm();
 }
 
