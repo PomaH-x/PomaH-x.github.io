@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="task8.css">
+</head>
+<body>
+  
+    <button id="openFormButton">Открыть форму</button>
+
+    <div id="popup" style="display: none;">
+        <h1>Форма обратной связи</h1>
+        <form id="feedbackForm">
+            <label for="fullName">ФИО:</label>
+            <input type="text" id="name" name="fullName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="organization">Организация:</label>
+            <input type="text" id="organization" name="organization"><br>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <input type="checkbox" id="policyCheckbox" required>
+            <label for="policyCheckbox">Согласен с политикой обработки персональных данных</label><br>
+
+            <button type="submit">Отправить</button>
+            
+           </script>
+        </form>
+    </div>
+
+    <div id="messageContainer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Task8.js"></script>
+</body>
+</html>

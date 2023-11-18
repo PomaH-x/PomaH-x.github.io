@@ -1,0 +1,34 @@
+#openFormButton {
+  width: 200px; 
+  height: 50px; 
+  background-color: rgb(43, 43, 235); 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+#popup {
+  display: none; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 500px; 
+  height: 400px; 
+  background-color: rgb(43, 43, 235); 
+  border: 2px solid black; 
+  border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 90%;
+    max-width: 400px;
+  }
+}
