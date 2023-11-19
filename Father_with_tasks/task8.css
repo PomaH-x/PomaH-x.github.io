@@ -27,8 +27,7 @@
 }
 
 @media (max-width: 768px) {
-  .popup {
-    width: 70%;
-    max-width: 300px;
+  #popup {
+    max-width: 400px;
   }
 }
