@@ -29,6 +29,5 @@
 @media screen and (max-width: 768px) {
   #popup {
     width: 90%;
-    max-width: 400px;
   }
 }
